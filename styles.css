@@ -1,0 +1,183 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #f0b7b7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.flower {
+  min-width: 75px;
+}
+
+.flower-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.shy-emoji {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  max-width: 150px;
+}
+
+.cute-shy {
+  position: absolute;
+  top: 0;
+  right: 75px; 
+  max-width: 175px;
+}
+
+.syz-blush-syz {
+  max-width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+}
+
+.flower-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.flower-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.flowers-cat {
+  position: absolute;
+  bottom: 0;
+  right: 75px;
+  max-width: 150px;
+}
+
+.flower-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.girl-with-flowers {
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+  max-width: 150px;
+}
+
+.main-content {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.kitagawa-wrapper {
+  display: flex;
+}
+
+.marin-kitagawa {
+  display: block;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 0 15px 0 rgb(207, 136, 143);
+  width: 100%;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgb(197, 119, 158);
+  background-color: rgb(219, 134, 176);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.yes, .no {
+  transition: all 0.2s ease;
+}
+
+.yes:hover,
+.no:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgb(207, 136, 143);
+  letter-spacing: 1px;
+}
+
+.answers {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-family: "Roboto";
+  text-shadow: 0 0 5px rgb(236, 47, 142);
+  font-weight: 500;
+}
+
+#move-random {
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 320px) {
+  .question {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .answers {
+    font-size: 14px;
+    gap: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .question {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .answers {
+    font-size: 18px;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .question {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .answers {
+    font-size: 24px;
+    gap: 25px;
+  }
+}
