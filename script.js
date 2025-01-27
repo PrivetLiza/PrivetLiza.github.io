@@ -6,6 +6,10 @@ function moveRandomEl(elm) {
 
 const moveRandom = document.querySelector("#move-random");
 
-moveRandom.addEventListener("mouseenter", function (e) {
+function moveElement(e) {
   moveRandomEl(e.target);
-});
+}
+
+// Используем событие 'mouseenter' для десктопов и 'click' для мобильных устройств
+moveRandom.addEventListener("mouseenter", moveElement);
+moveRandom.addEventListener("click", moveElement);
